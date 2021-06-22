@@ -4,7 +4,7 @@
     "Karissa McKelvey"
   ],
   "description": "A js/wasm wrapper for the rust implementation of SPAKE2",
-  "version": "0.1.4",
+  "version": "0.1.2",
   "license": "MIT",
   "repository": {
     "type": "git",
