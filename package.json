@@ -1,4 +1,9 @@
 {
+  "collaborators": ["Karissa McKelvey <okdistribute@riseup.net>"],
+  "name": "spake2-wasm",
+  "description": "wasm bindings for spake2 implementation",
+  "license": "MIT",
+  "version": "0.2.0", 
   "files": [
     "README.md",
     "pkg.js",
