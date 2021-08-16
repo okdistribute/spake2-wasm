@@ -4,6 +4,12 @@ This is a WASM port of the Rust library for SPAKE2 algorithm. SPAKE2 is
 a secure method for generating a shared secret between two devices derived from
 a low entropy password. 
 
+## Installation
+
+```
+npm i spake2-wasm
+```
+
 ## Usage
 
 ```js
@@ -28,6 +34,7 @@ let Bkey = spake2.finish(Bstate, Amsg);
 console.log(Akey.toString('hex') === Bkey.toString('hex'))
 ```
 
+See how to use this in the browser in the [example](/example) directory.
 
 
 ## Building
