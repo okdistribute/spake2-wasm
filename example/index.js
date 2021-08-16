@@ -1,4 +1,3 @@
-import assert from 'assert';
 import * as spake2 from "spake2-wasm";
 
 let appid = 'myapp/v1';
@@ -13,6 +12,6 @@ let Bmsg = spake2.msg(Bstate)
 let Akey = spake2.finish(Astate,Bmsg);
 let Bkey = spake2.finish(Bstate,Amsg);
 
-assert(Akey.toString('hex') === Bkey.toString('hex'));
+document.body.innerHTML = Akey.toString('hex') === Bkey.toString('hex')
 
 
