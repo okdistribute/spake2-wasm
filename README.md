@@ -1,6 +1,10 @@
 # spake2-wasm
 
-This is a WASM port of the [Rust library](https://docs.rs/spake2/0.2.0/spake2/) for the [SPAKE2 algorithm](https://tools.ietf.org/id/draft-irtf-cfrg-spake2-10.html). SPAKE2 is a secure method for deriving a shared secret from a low entropy password.
+This is a WASM port of the [SPAKE2 algorithm](https://tools.ietf.org/id/draft-irtf-cfrg-spake2-10.html). SPAKE2 is a secure method for deriving a shared secret from a low entropy password.
+
+For the default security level each message is 33 bytes long. The resulting secrets are Ed25519 elliptic curve keys, roughly equivalent to an 128-bit symmetric key.
+
+[Read the Rust library documentation for more information on how this works, it's pretty good!](https://docs.rs/spake2/0.2.0/spake2/)
 
 ## Installation
 
