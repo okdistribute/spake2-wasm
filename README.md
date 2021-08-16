@@ -7,12 +7,27 @@ a low entropy password.
 ## Usage
 
 ```js
-import * as spake2 from 'spake2-wasm'
+import * as spake2 from "spake2-wasm";
 
-spake2.start()
-spake2.msg()
-spake2.finish()
+let appid = 'myapp/v1';
+let password = 'pineapple sausage';
+
+// peer A sends start message
+let Astate = spake2.start(appid, password);
+let Amsg = spake2.msg(Astate)
+
+// peer B sends start message
+let Bstate = spake2.start(appid, password);
+let Bmsg = spake2.msg(Bstate)
+
+// Both sides receive the start message and generate a key
+let Akey = spake2.finish(Astate, Bmsg);
+let Bkey = spake2.finish(Bstate, Amsg);
+
+// These resulting secret keys should be the same
+console.log(Akey.toString('hex') === Bkey.toString('hex'))
 ```
+
 
 
 ## Building
