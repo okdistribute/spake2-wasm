@@ -1,6 +1,6 @@
 # spake2-wasm
 
-This is a WASM port of the Rust library for SPAKE2 algorithm. SPAKE2 is
+This is a WASM port of the [Rust library](https://docs.rs/spake2/0.2.0/spake2/) for the [SPAKE2 algorithm](https://tools.ietf.org/id/draft-irtf-cfrg-spake2-10.html). SPAKE2 is
 a secure method for generating a shared secret between two devices derived from
 a low entropy password. 
 
